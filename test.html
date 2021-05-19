@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Flex</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <style>
+    header {
+      display: grid;
+      height: 100px;
+      background-color: aquamarine;
+      border: 1px solid aqua;
+      justify-content: center;
+      
+
+    }
+    main {
+      display: grid;
+      grid-template-areas: 'sideBar mainRegion';
+      grid-template-columns: 200px auto ;
+    }
+    aside {
+      grid-area: sideBar;
+      background-color: burlywood;
+      border: 1px solid chocolate;
+      padding: 20px;
+      min-width: 200px;
+    }
+    section {
+      grid-area: mainRegion;
+      background-color: cornsilk;
+      border: 1px solid darkgrey;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .product-card {
+      display: inline-block;
+      margin: 10px;
+    }
+    .product-card img {
+      width: 100%;
+      border: 1px solid yellowgreen;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <header>Header area</header> 
+  <main>
+      <aside>Sidebar</aside>
+      <section>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product1.jpg" alt="" />
+          </div>
+          <div class="product-info">
+            <h5>Winter Jacket</h5>
+            <h6>$99.99</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product2.jpg" alt="" />
+          </div>
+          <div class="product-info">
+            <h5>Winter Jacket</h5>
+            <h6>$99.99</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product3.jpg" alt="" />
+          </div>
+          <div class="product-info">
+            <h5>Winter Jacket</h5>
+            <h6>$99.99</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product4.jpg" alt="" />
+          </div>
+          <div class="product-info">
+            <h5>Winter Jacket</h5>
+            <h6>$99.99</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product1.jpg" alt="" />
+          </div>
+          <div class="product-info">
+            <h5>Winter Jacket</h5>
+            <h6>$99.99</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product2.jpg" alt="" />
+          </div>
+          <div class="product-info">
+            <h5>Winter Jacket</h5>
+            <h6>$99.99</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product3.jpg" alt="" />
+          </div>
+          <div class="product-info">
+            <h5>Winter Jacket</h5>
+            <h6>$99.99</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product4.jpg" alt="" />
+          </div>
+          <div class="product-info">
+            <h5>Winter Jacket</h5>
+            <h6>$99.99</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product1.jpg" alt="" />
+          </div>
+          <div class="product-info">
+            <h5>Winter Jacket</h5>
+            <h6>$99.99</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product2.jpg" alt="" />
+          </div>
+          <div class="product-info">
+            <h5>Winter Jacket</h5>
+            <h6>$99.99</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product3.jpg" alt="" />
+          </div>
+          <div class="product-info">
+            <h5>Winter Jacket</h5>
+            <h6>$99.99</h6>
+          </div>
+        </div>
+      </section>
+  </main>
+</body>
+
+</html>
